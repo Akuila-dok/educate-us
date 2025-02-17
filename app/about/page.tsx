@@ -2,18 +2,17 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function About() {
   useEffect(() => {
-    scroll.scrollToTop(); // Ensure page starts at top on load
+    window.scrollTo(0, 0); // Ensure page starts at top on load
   }, []);
 
   return (
     <>
       <Navbar />
       <div className="bg-gradient-to-r mt-10 from-blue-50 to-green-50 font-ubuntu py-16 px-6 lg:px-12">
-       
+        
         {/* Who We Are Section */}
         <section id="who-we-are" className="max-w-3xl mx-auto mb-20">
           <h3 className="text-3xl font-bold text-gray-800 text-center mb-4">
@@ -61,16 +60,16 @@ function About() {
 
           {/* Objectives */}
           <div className="bg-white shadow-md rounded-lg p-6">
-            <h4 className="text-2xl font-bold text-red-600 mb-2">🔭  Objectives</h4>
+            <h4 className="text-2xl font-bold text-red-600 mb-2">🔭 Objectives</h4>
             <ul className="text-xl text-gray-600 leading-relaxed space-y-2">
               <li>✔️ To fight against gender-based inequality.</li>
               <li>✔️ To promote peacebuilding.</li>
               <li>✔️ To provide financial access.</li>
             </ul>
           </div>
-          <p className="text-2xl text-gray-500 mt-24">If you could spare a dollar, 5 bucks, 10 bucks or even 100 dollars, you have put a smile on the face of a refugee in Kakuma Refugee Camp. </p>
-
+          <p className="text-2xl text-gray-500 mt-24">If you could spare a dollar, 5 bucks, 10 bucks or even 100 dollars, you have put a smile on the face of a refugee in Kakuma Refugee Camp.</p>
         </section>
+
         {/* Donate Button */}
         <div className="mt-12 flex justify-center">
           <a
